@@ -31,6 +31,8 @@ t_murano
 - Goのコードではなくバイナリのみを提供するパッケージ
 - 現段階では試験的なものっぽい
 
+.code src/binary-only-packages.go
+
 * subtestsとsub-benchmarks
 - テストやベンチマークのコードをネストして書けるようになった
 
