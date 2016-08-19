@@ -1,0 +1,41 @@
+5分でわかるかもしれない Go1.7で変わったこと
+kzrb meetup48
+
+t_murano
+
+* 変更点一覧
+- SSAが導入された
+- golang.org/x/net/contextが標準パッケージに
+- binary-only packages
+- subtestsとsub-benchmarks
+- etc...
+
+* SSAとは?
+- static single-assignment
+- コンパイラ内部の話
+- DefineとUseの関係を効率的に表す中間表現
+- 各変数が一度のみ代入される
+
+* 最適化での利点
+- デッドコードの除去
+- 定数畳み込み and 定数伝播
+- etc... (ちょっと難しいので気になったら各自調べてみてください)
+
+* x/net/context
+- 並行処理で便利なインタフェースを提供するパッケージ
+- goroutineのキャンセルやタイムアウトの管理
+- requet-scopedな値の伝播
+- これを利用しているWeb Appllication Frameworkもしばしばある
+
+* binary-only packages
+- Goのコードではなくバイナリのみを提供するパッケージ
+- 現段階では試験的なものっぽい
+
+* subtestsとsub-benchmarks
+- テストやベンチマークのコードをネストして書けるようになった
+
+* まとめ
+- 他にも色々変更点はある
+- 言語仕様の変更はあまりない感じ
+- バイナリサイズが小さくなったりパフォーマンスは良くなってるとのこと
+
