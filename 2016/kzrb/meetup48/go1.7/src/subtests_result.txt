@@ -1,0 +1,13 @@
+$ go test -v subtests_test.go
+=== RUN   TestSubtests
+=== RUN   TestSubtests/1+2
+=== RUN   TestSubtests/2+4
+=== RUN   TestSubtests/-1+1
+=== RUN   TestSubtests/0+0
+--- PASS: TestSubtests (0.00s)
+    --- PASS: TestSubtests/1+2 (0.00s)
+    --- PASS: TestSubtests/2+4 (0.00s)
+    --- PASS: TestSubtests/-1+1 (0.00s)
+    --- PASS: TestSubtests/0+0 (0.00s)
+PASS
+ok  	command-line-arguments	0.011s

@@ -34,6 +34,12 @@ t_murano
 * subtestsとsub-benchmarks
 - テストやベンチマークのコードをネストして書けるようになった
 
+* subtests example
+.code src/subtests_test.go /START OMIT/,/END OMIT/
+
+* subtests example
+.code src/subtests_result.txt
+
 * まとめ
 - 他にも色々変更点はある
 - 言語仕様の変更はあまりない感じ
