@@ -24,11 +24,15 @@ t_murano
 - 定数畳み込み and 定数伝播
 - etc... (ちょっと難しいので気になったら各自調べてみてください)
 
-* x/net/context
+* context
 - 並行処理で便利なインタフェースを提供するパッケージ
 - goroutineのキャンセルやタイムアウトの管理
 - requet-scopedな値の伝播
 - これを利用しているWeb Appllication Frameworkもしばしばある
+
+* context
+[[https://golang.org/pkg/context/][https://golang.org/pkg/context/]]
+.image img/context.png
 
 * binary-only packages
 - Goのコードではなくバイナリのみを提供するパッケージ
